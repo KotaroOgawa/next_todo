@@ -4,3 +4,5 @@ module.exports = {
     autoprefixer: {},
   },
 };
+
+// hello world を出力
