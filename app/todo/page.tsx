@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { InputTodo } from "./components/InputTodo";
-import { DoneTodos } from "./components/DoneTodos";
+import { InputTodo } from "../components/InputTodo";
+import { DoneTodos } from "../components/DoneTodos";
 
 const Page = () => {
   const {
@@ -32,7 +32,7 @@ const Page = () => {
     if (data.todoText === "") return;
     const newTodos = [...doneTodos, data.todoText];
     setDoneTodos(newTodos);
-    reset(); // フォームのリセット
+    reset();
   };
 
   /**
